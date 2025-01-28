@@ -1,0 +1,566 @@
+@font-face {
+  font-family: roboto;
+  src: url('./fomts/Roboto-Regular.ttf');
+}
+
+*{
+  Padding: 0;
+  margin: 0;
+  border: none;
+  font-family: roboto;
+}
+
+:root{
+  --a: 0;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 5px; /* width of the entire scrollbar */
+}
+  
+::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #303030; /* color of the scroll thumb */
+  cursor: pointer;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+  background: #fbfbfb; /* color of the scroll thumb on hover */
+}
+
+
+button{
+  background: none;
+}
+
+body{
+  background-color: black;
+}
+
+.container{
+  display: flex;
+}
+
+.left{
+  width: 20vw;
+  height: 91vh;
+  background-color: #121212;
+  color: white;
+  border-radius: 10px;
+}
+
+.library{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #b3b3b3;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.library p{
+  padding-left: 10px;
+}
+
+.left-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+  height: 50px;
+}
+
+.close{
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.invert{
+  filter: invert(1);
+}
+
+.logo{
+  padding-top: 5px;
+  padding-left: 28px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.btn-search{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  right: -70px
+}
+
+nav{
+  display: flex;
+  margin: 10px 0px;
+  justify-content: space-between;
+}
+
+.home{
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #1f1f1f;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.signup{
+  padding-right: 20px;
+  color: #bebebe;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.login{
+  background-color: white;
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+  padding: 15px 28px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.searchbtn{
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 36px;
+  height: 50px;
+  padding: 0px 10px;
+  margin-left: 5px;
+}
+
+.input{
+  font-size: 16px;
+  padding: 10px;
+  width: 350px;
+  border-color: #1f1f1f;
+  border-radius: 30px;
+  font-weight: 500;
+  background-color: #1f1f1f;
+  outline: none;
+  color: white;
+}
+
+.browsetag{
+  font-size: 25px;
+  text-align: center;
+  color: #b3b3b3;
+  padding: 20px;
+}
+
+
+.playlist1{
+  height: 110px;
+  position: relative;
+  padding: 10px 20px;
+  margin-left: 8px;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.heading{
+  font-size: 16px;
+  font-weight: 700;
+  padding: 7px 0px;
+}
+
+.text{
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 7px;
+}
+
+.playlist1 button{
+  background-color: white;
+  color: black;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.footer{
+  width: 20vw;
+}
+
+.links{
+  display: flex;
+  width: 20vw;
+  height: 10vh;
+  flex-wrap: wrap;
+  margin-left: 15px;
+}
+
+.linksIn{
+  margin: 10px;
+}
+
+.links a{
+  text-decoration: none;
+  color: #b3b3b3;
+  padding:0px 19px 20px 0px;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.cookies{
+  margin-left: 25px;
+  margin-top: 40px;
+}
+
+.cookies a{
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.footerbtn button{
+  border: 1px solid white;
+  color: white;
+  padding: 5px 12px;
+  display: flex;
+  align-items: center;
+  margin:10px 0px 0px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.footerbtn p{
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.right{
+  width: 80vw;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(47,47,47,1) 100%);
+  color: white;
+  margin: 0px 10px;
+  border-radius: 10px;
+  padding: 20px 20px 0px 20px;
+  position: relative;
+  
+}
+
+.right a{
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.right-heading{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.albumtext{
+  color: #b3b3b3;
+}
+
+.cards{
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.play{
+  border-radius: 50%;
+  background-color: #3be477;
+  padding: 10px;
+  position: absolute;
+  bottom: 50px;
+  right: 10px;
+  opacity: var(--a);
+  cursor: pointer;
+  display: flex;
+}
+
+.album :hover{
+  --a: 1;
+}
+
+.album{
+  position: relative;
+  transition: all 0.5s;
+}
+
+:hover{
+  opacity: 1;
+}
+
+.albumimg{
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.playbar{
+  bottom: 0;
+  background-color:#121212; 
+  width: 76vw;
+  padding: 20px 5px 10px 5px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  position: fixed;
+  display: none;
+}
+
+.playbar img{
+  padding: 0px 15px;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.playbar-heading{
+  display: flex;
+  justify-content: space-between;
+}
+
+.songlist ul li{
+  list-style: none;
+  display: flex;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  justify-content: space-around;
+  border-radius: 20px;
+  margin: 0px 5px 10px 0px;
+  cursor: pointer;
+}
+
+.songlist{
+  margin: 0px 20px;
+  height: 410px;
+  overflow: scroll;
+  overflow-x: hidden;
+}   
+
+.info{
+  width: 148px;
+}
+
+.seekbar{
+  width: 76vw;
+  height: 3px;
+  background:#3be477;
+  display: flex;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.timevol{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.songtime{
+  padding-left: 35px;
+}
+
+.volume{
+  display: flex;
+}
+
+.volume input{
+  cursor: pointer;
+}
+
+.circle{
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: #3be477;
+  position: absolute;
+  bottom: 4px;
+  transition: left 0.5s;
+  cursor: pointer;
+}
+
+.songname{
+  width: 120px;;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.hamburger{
+  margin: 10px 15px;
+  display: none;
+  cursor: pointer; 
+}
+
+@media (max-width: 1400px) {
+  .left{
+    position: absolute;
+    left: -100%;
+    transition: left 1s ease-out;
+    z-index: 1;
+  }
+  .right{
+    width: 100vw;
+    height: 100vh;
+  }
+  .seekbar,.playbar{
+    width: 96vw;
+  }
+  .hamburger{
+    display: block;
+  }
+  .logo{
+    display: none;
+  }
+  .close{
+    display: block;
+  }
+}
+
+
+@media (min-width: 1401px) {
+  .close{
+   display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .info{
+   font-size: 10px;
+   padding: 10px;
+  }
+  
+  .songlist ul li{
+    padding: 0px 2px;
+  }
+  .left{
+    width: 30vw;
+    height: 100vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  nav{
+    width: 100vw;
+  }
+  .left{
+    width: 30vw;
+    height: 100vh;
+  }
+  .btn-search{
+    position: relative;
+    display: flex;
+    right: 0px
+  }
+}
+
+@media (max-width: 800px) {
+  nav{
+    width: 100%;
+  }
+  .btn-search{
+    position: relative; 
+    display: flex;
+    right: 0px;
+    width: 2%;
+    
+  }
+  .searchbtn{
+    width: 50vw;
+  }
+
+  .login{
+    padding: 10px 20px;
+    font-size: 10px;
+    margin-right: 5px;
+  }
+  .signup{
+    font-size: 10px;
+    padding-right: 10px;
+  }
+  .reg{
+    position: relative;
+    right: 0;
+    align-items: center;
+    display: flex;
+  }
+  .left{
+    width: 40%;
+    height: 100%;
+  }
+  .right{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .left{
+    width: 100%;
+    height: 100%;
+  }
+ 
+  .links{
+    width: 100vw;
+    height: 20vh;
+    margin: 5px;
+  }
+  .info{
+    font-size: 18px;
+    padding: 17px;
+   }
+   .songlist ul li{
+    padding: 0px 10px;
+  }
+  .linksIn a{
+    font-size: 15px;
+  }
+
+  .linksIn{
+    height: 50px;
+  }
+
+  .footer{
+    width: 100vw;
+  }
+  .footerbtn{
+    margin-top: 30px;
+    position: relative;
+    bottom: 0;
+  }
+
+  .right{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+

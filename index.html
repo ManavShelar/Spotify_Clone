@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="hamburger"><img src="img/hamburger.svg" width="30px" height="30px" alt="hamburger IMG"></div>
+      <div class="logo"><img src="img/logo.svg" alt="Spotify logo" /></div>
+      <div class="btn-search">
+        <button class="home"><img src="img/home.svg" width="25px"class="invert" alt="Home Img" /></button>
+        <div class="searchbtn">
+        <img src="img/search.svg" class="invert" width="20px" alt="Search img" />
+        <input class="input" type="text" placeholder="What do you want to play?">
+        <p class="browsetag">|</p>
+        <button class="browse"><img src="img/browse.svg" class="invert" width="25px" alt="browse Img"></button>
+      </div>
+    </div>
+      <div class="reg"><button class="signup">Sign Up</button>
+        <button class="login">Log in</button>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="left">
+        <div class="left-header">
+          <div class="library">
+            <img src="img/Library.svg" class="invert" width="25px" height="25px" alt="Library" />
+            <p>Your Library</p>
+          </div>
+          <div class="close">
+            <img src="img/close.svg" width="20px" height="20px" alt="Close Img" />
+          </div>
+        </div>
+        <div class="songlist">
+          <ul><div class="object" style="display: none;">[object Object]</div></ul>
+        </div>
+        <div class="footer">
+          <div class="links">
+            <div class="linksIn"><a href="">Legal</a></div>
+            <div class="linksIn"><a href="">Safety&PrivacyCenter</a></div>
+            <div class="linksIn"><a href="">PrivacyPolicy</a></div>
+            <div class="linksIn"><a href="">Cookies</a></div>
+            <div class="linksIn"><a href="">AboudAds</a></div>
+            <div class="linksIn"><a href="">Acessibilities</a></div>
+          </div>
+          <div class="cookies">
+            <a href="">Cookies</a>
+          </div>
+          <div class="footerbtn">
+            <div class="button">
+            <button class="lang">
+              <img src="img/language.svg" class="invert" width="20px" height="20px" alt="Language img">
+              <p>English</p>
+            </button>
+          </div>
+          </div>
+        </div>
+      </div>
+        <div class="right">
+          <div class="right-heading">
+          <a href="">Popular artists</a>
+          <p>Show all</p>
+        </div>
+        <div class="cards">
+          <!-- <div data-folder="Hindi_Songs" class="album">
+            <div class="albumimg" style="background-image: url('https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca');">
+            <img class="play" src="img/play.svg" width="20px" alt="Playimg">
+          </div>
+          <h2>Pritam</h2>
+          <p class="albumtext">Artist</p>        
+        </div>
+        <div class="album" data-folder="English_Songs">
+          <div 
+            class="albumimg" 
+            style="background-image: url('https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7');">
+            <img class="play" src="img/play.svg" width="20px" alt="Playimg">
+          </div>
+          <h2>Arijit Singh</h2> 
+          <p class="albumtext">Artist</p>
+        </div> -->
+        <!-- <div class="album">
+          <div 
+            class="albumimg" 
+            style="background-image: url('https://i.scdn.co/image/ab67616100005174bd6fbc7d0973cc33940781ad');">
+            <img class="play" src="img/play.svg" width="20px" alt="Playimg">
+          </div>
+          <h2>Arijit Singh</h2> 
+          <p class="albumtext">Artist</p>
+        </div> -->
+        </div>
+        <div class="playbar">
+          <div class="playbar-heading">
+            <div class="songname"> </div>
+            <div class="playbarimg">
+              <img src="img/minus10.svg" id="minus" alt="Minus10">
+              <img src="img/previous.svg" id="previous" alt="PreviousSong Img">
+              <img src="img/play2.svg"id="play" alt="Playsong Img">
+              <img src="img/next.svg" id="next"alt="nextSong Img">
+              <img src="img/plus10.svg" id="plus" alt="Plus10">
+            </div>
+            <div class="timevol">
+            <div class="songtime"> </div>
+            <div class="volume"><img src="img/volume.svg" class="vol_img" width="30px" height="30px" alt="volumeImg">
+              <input type="range"  class="volrange">
+            </div>
+          </div>
+          </div>
+          <div class="seekbar">
+            <div class="circle"></div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
