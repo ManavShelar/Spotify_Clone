@@ -184,7 +184,7 @@ async function display_albums(){
       let a = await fetch(`http://127.0.0.1:5500/songs/${folder}/info.json`)
       let response = await a.json();
       card_container.innerHTML = card_container.innerHTML + `<div data-folder="${folder}" class="album">
-            <div class="albumimg" style="background-image: url('/songs/${folder}/cover.jpg');">
+            <div class="albumimg" style="background-image: url('songs/${folder}/cover.jpg');">
             <img class="play" src="img/play.svg" width="20px" alt="Playimg">
           </div>
           <h2>${response.title}</h2>
